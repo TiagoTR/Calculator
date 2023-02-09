@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { Calculator, Container} from "./styles/app";
+import ButtonRound from "./components/atoms/ButtonRound"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Calculator >
+        <div className="data">
+
+        </div>
+        <div className="special-buttons">
+            
+        </div>
+        <hr/>
+        <div className="pad">
+            <div className="numbers">
+              <ButtonRound />
+            </div>
+            <div className="operations"></div>
+        </div>
+      </Calculator>
+    </Container>
   );
 }
 
